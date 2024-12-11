@@ -3,34 +3,61 @@
 
 <head>
 	<title>Minha primeira página</title>
+
+	<link href="./styles.css" rel="stylesheet">
 </head>
 
 <body>
 	<!-- Caixa principal -->
 	<main>
 		<!-- Caixa de apresentação (esquerda) -->
-		<div>
+		<div id="presentation">
 			<!-- Título com logo -->
-			<div>
+			<div id="presentation-header">
 				<img src="./logo.png" />
-				<button>Back to website -></button>
+				<button>Voltar para o site →</button>
 			</div>
-			<!-- Conteúdo - Carrossel -->
-			<div>
+			<!-- Conteúdo - Footer -->
+			<div id="presentation-footer">
 				<p>
-					<span>Capturing moments,</span>
+					<span>Registrando momentos,</span>
 					<br />
-					<strong>Creating memories</strong>
+					<strong>Criando memórias</strong>
 				</p>
-				<div>
-					<div>-</div>
-					<div>-</div>
-					<div>-</div>
+				<div id="presentation-footer-indicators">
+					<div></div>
+					<div></div>
+					<div class="active"></div>
 				</div>
 			</div>
 		</div>
 		<!-- Caixa de cadastro (direita) -->
-		<div></div>
+		<div id="register-form">
+			<div id="register-form-header">
+				<h2>Crie uma conta</h2>
+				<p>Já tem uma conta? <a href="#!">Log in</a></p>
+			</div>
+			<form>
+				<div id="name-input-group">
+					<input placeholder="Primeiro nome" />
+					<input placeholder="Sobrenome" />
+				</div>
+				<input placeholder="Email" type="email" />
+				<input placeholder="Insira sua senha" type="password" />
+				<label>
+					<input type="checkbox" />
+					<span>Eu concordo com os <a href="#!">Termos e Condições de uso</a>.</span>
+				</label>
+				<button class="primary">Cadastrar conta</button>
+			</form>
+			<div class="divider">
+				ou cadastre com
+			</div>
+			<div id="alternative-register-ways">
+				<button><img src="google-icon.png" alt="Ícone da google" width="30" /> Google</button>
+				<button><img src="apple-icon.png" alt="Ícone da apple" width="25" /> Apple</button>
+			</div>
+		</div>
 	</main>
 </body>
 
