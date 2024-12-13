@@ -39,13 +39,13 @@
 			</div>
 			<form>
 				<div id="name-input-group">
-					<input placeholder="Primeiro nome" />
-					<input placeholder="Sobrenome" />
+					<input name="first_name" placeholder="Primeiro nome" required />
+					<input name="last_name" placeholder="Sobrenome" />
 				</div>
-				<input placeholder="Email" type="email" />
-				<input placeholder="Insira sua senha" type="password" />
+				<input name="email" placeholder="Email" type="email" required />
+				<input name="password" placeholder="Insira sua senha" type="password" minlength="8" maxlength="16" required />
 				<label>
-					<input type="checkbox" />
+					<input name="terms" type="checkbox" required />
 					<span>Eu concordo com os <a href="#!">Termos e Condições de uso</a>.</span>
 				</label>
 				<button class="primary">Cadastrar conta</button>
@@ -59,6 +59,8 @@
 			</div>
 		</div>
 	</main>
+
+	<script src="index.js"></script>
 </body>
 
 </html>
