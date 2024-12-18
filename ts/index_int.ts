@@ -1,5 +1,5 @@
 import { TIPO_CONTA } from "./models/Conta";
-import { criarIConta, IConta } from "./models/IConta";
+import { criarIConta } from "./models/IConta";
 
 const conta = criarIConta("123", "123", "123", TIPO_CONTA.CORRENTE);
 
