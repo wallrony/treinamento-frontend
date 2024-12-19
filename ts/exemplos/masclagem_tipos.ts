@@ -16,3 +16,5 @@ const jose: Empregado = {
 	horarioEntrada: "",
 	horarioSaida: "",
 };
+
+export {};
